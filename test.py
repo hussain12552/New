@@ -8,3 +8,4 @@ print(greet(input_name))
 # It defines a function `greet` that takes a name as an argument and returns a greeting message.
 print("This script is a demonstration of a simple Python function.")
 # The script also includes a user input prompt to get the name from the user.
+
