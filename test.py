@@ -9,3 +9,7 @@ print(greet(input_name))
 print("This script is a demonstration of a simple Python function.")
 # The script also includes a user input prompt to get the name from the user.
 
+def farewell(name):
+    """Function to bid farewell to a person with their name."""
+    return f"Goodbye, {name}!"
+print(farewell(input_name))
