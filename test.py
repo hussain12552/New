@@ -13,3 +13,6 @@ def farewell(name):
     """Function to bid farewell to a person with their name."""
     return f"Goodbye, {name}!"
 print(farewell(input_name))
+
+# The farewell function is defined to provide a goodbye message.
+# This script can be used to demonstrate basic Python function definitions and user input handling.
