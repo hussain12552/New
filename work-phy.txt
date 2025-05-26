@@ -1,0 +1,29 @@
+def calculator():
+    """
+    A simple command-line calculator that evaluates a given expression.
+    """
+    print("Welcome to the Command-Line Calculator!")
+    print("Enter your mathematical expression (e.g., 2 + 3 * 5).")
+    print("Type 'exit' to quit.")
+
+    while True:
+        expression = input("Enter expression: ")
+
+        if expression.lower() == 'exit':
+            print("Exiting calculator. Goodbye!")
+            break
+
+        try:
+            # Evaluate the expression
+            result = eval(expression)
+            print(f"Result: {result}")
+        except SyntaxError:
+            print("Error: Invalid expression syntax. Please check your input.")
+        except NameError:
+            print("Error: Invalid input. Make sure you are using valid numbers and operators.")
+        except Exception as e:
+            print(f"An unexpected error occurred: {e}")
+
+if __name__ == "__main__":
+    calculator()
+    
